@@ -351,8 +351,12 @@ WHERE USER_NAME = '이순신';
 DELETE TBL_PRODUCT
 WHERE PRODUCT_NAME = '반팔 티셔츠';
 -- 19) '김아영'이 주문한 상품의 이름과 가격을 조회
-SELECT PRODUCT_PRICE,PRODUCT_NAME 
+SELECT PRODUCT_PRICE,PRODUCT_NAME,ORDER_ID 
 FROM TBL_PRODUCT
+JOIN TBL_ORDER TBO
+ON 
+
+
 
 -- 20) 각 구매자별로 주문한 상품의 총 개수를 조회 (구매자 이름, 주문 건수)
 -- 21) 가장 많이 주문된 상품 3개의 이름과 주문 횟수를 내림차순으로 조회
