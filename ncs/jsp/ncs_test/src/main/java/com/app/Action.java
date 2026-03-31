@@ -1,0 +1,16 @@
+package com.app;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.app.dao.ProductDAO;
+
+public interface Action {
+	public Result excute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException;
+	Result result = new Result();
+	ProductDAO productDAO = new ProductDAO();
+	
+}
